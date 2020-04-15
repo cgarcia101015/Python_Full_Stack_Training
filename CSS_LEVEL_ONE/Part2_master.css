@@ -1,0 +1,20 @@
+body{
+    background: url(https://atlantis.nyc3.digitaloceanspaces.com/styled/72025f140f22a3eb32950bbb9d76e68d); 
+    background-repeat: no-repeat;
+}
+
+div{
+    background-color: blue;
+    border-color: orange;
+    border-width: 2px;
+    border-style: dotted;
+}
+
+p{
+    color: yellow;
+}
+
+span{
+    background: red;
+    color: black;
+}
