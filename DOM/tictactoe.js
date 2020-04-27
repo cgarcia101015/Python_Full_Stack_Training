@@ -1,5 +1,6 @@
+// Restart Game Button
 var restart = document.querySelector("#b");
-
+// Grabs all the squares
 var squares = document.querySelectorAll("td");
 
 function clearBoard() {
@@ -10,15 +11,26 @@ function clearBoard() {
 
 restart.addEventListener('click', clearBoard);
 
-// function changeMarker() {
-//     if (this.textContent === " ") {
-//         this.textContent = "X"
-//     } else if ( this.textContent === "X") {
-//         this.textContent = "O"
-//     } else {
-//         this.textContent = " "
+var cellOne = document.querySelector('#one')
+
+// cellOne.addEventListener('click',function(){
+//     if (cellOne.textContent === ' ') {
+//         cellOne.textContent = 'X';
+//     }else if (cellOne.textContent === 'X') {
+//         cellOne.textContent = 'O';
+//     }else {
+//         cellOne.textContent = '';
 //     }
-// }
+// })
+function changeMarker() {
+    if (this.textContent === " ") {
+        this.textContent = "X"
+    } else if ( this.textContent === "X") {
+        this.textContent = "O"
+    } else {
+        this.textContent = " "
+    }
+}
 
 for (var i = 0; i < squares.length; i++) {
     squares[i].addEventListener('click', changeMarker)
